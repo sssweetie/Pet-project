@@ -1,0 +1,66 @@
+.logo {
+  width: 130px;
+}
+.nav {
+  max-width: 1230px;
+  height: 88px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+nav.nav section a:hover {
+  color: #ff4242;
+}
+nav section a:not(:first-child) {
+  margin-left: 40px;
+}
+::placeholder {
+  color: #9a9ca5;
+  padding-left: 16px;
+}
+.searchBar {
+  max-width: 390px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+}
+.verticalLine {
+  border-left: 2px #dadbdd solid;
+  height: 22px;
+}
+.heart {
+  margin-left: 48px;
+  display: flex;
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a.heart label {
+  font-size: 16px;
+  margin-left: 9px;
+  font-weight: 400;
+}
+a.cart label {
+  font-size: 12px;
+  margin-left: 9px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  background-color: #03cea4;
+}
+/* TODO ICON INPUT */
+/* .lensIcon {
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../../../img/MainNavigation/Lens.png");
+} */
