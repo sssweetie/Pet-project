@@ -1,0 +1,124 @@
+.mainContent {
+  max-width: 1920px;
+  height: 800px;
+  width: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.box {
+  max-width: 1230px;
+  width: 100%;
+}
+
+div.mainContent div.box label {
+  color: #1e212c;
+  font-weight: 700;
+}
+
+div.mainContent div.box label:hover {
+  cursor: pointer;
+}
+
+.active {
+  font-size: 28px;
+  font-family: "Ubuntu", sans-serif;
+  margin-right: 4px;
+  padding-right: 150px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(66, 69, 81, 1);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  color: rgb(66, 69, 81);
+  opacity: 1;
+}
+
+.boxTitles {
+  padding: 140px 0 0 345px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newLabel {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+.mainH1 {
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 72px;
+  margin-top: 12px;
+}
+
+.slider {
+  display: flex;
+  margin-top: 180px;
+}
+
+.buttonLayer {
+  margin-top: 60px;
+  display: flex;
+}
+
+.sliderItem {
+  font-size: 28px;
+  font-family: "Ubuntu", sans-serif;
+  margin-right: 4px;
+  padding-right: 150px;
+  padding-bottom: 12px;
+  opacity: 0.6;
+  border-bottom: 2px solid rgba(66, 69, 81, 0.6);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.noBackgroundButton {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #17696a;
+  background-color: transparent;
+  border: 1px solid #17696a;
+  border-radius: 4px;
+  width: 150px;
+  height: 50px;
+}
+
+.commonButton {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #17696a;
+  border: 1px solid #17696a;
+  border-radius: 4px;
+  width: 230px;
+  height: 52px;
+  margin-left: 24px;
+}
+
+.leftArrow {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  opacity: 0.5;
+  position: absolute;
+  left: 32px;
+  top: 45%;
+}
+.leftArrow:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.rightArrow {
+  position: absolute;
+  opacity: 0.5;
+  right: 32px;
+  top: 45%;
+}
+.rightArrow:hover {
+  opacity: 1;
+  cursor: pointer;
+}
