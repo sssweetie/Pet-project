@@ -1,10 +1,6 @@
 import React from "react";
 import styles from "./Advertisment.module.css";
 import Timer from "./Advertisment_Timer/Advertisment_Timer";
-import blue from "../../img/Advertisment/blue.png";
-import pink from "../../img/Advertisment/pink.png";
-import gray from "../../img/Advertisment/gray.png";
-import lightgray from "../../img/Advertisment/lightgray.png";
 
 const Advertisment = () => {
   return (

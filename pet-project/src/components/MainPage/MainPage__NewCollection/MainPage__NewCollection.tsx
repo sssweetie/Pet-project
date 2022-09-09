@@ -45,7 +45,7 @@ const MainPage__NewCollection = () => {
       <div className={styles.box}>
         <div className={styles.boxTitles}>
           <label className={styles.newLabel}>new collection</label>
-          <h1 className={styles.mainH1}>Menswear 2020</h1>
+          <p className={styles.mainH1}>Menswear 2020</p>
           <div className={styles.buttonLayer}>
             <button className={styles.noBackgroundButton}>Shop sale</button>
             <button className={styles.commonButton}>Shop the menswear</button>

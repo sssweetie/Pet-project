@@ -55,7 +55,7 @@ const NewArrivals__Slider = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.textWrapper}>
-        <h1 className={styles.header}>New arrivals</h1>
+        <h1>New arrivals</h1>
         <p className={styles.description}>
           Check out our latest arrivals for the upcoming season
         </p>

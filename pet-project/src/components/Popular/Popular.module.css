@@ -1,0 +1,38 @@
+.popularWrapper {
+  height: 714px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popularWrapper h1 {
+  margin-top: 180px;
+}
+
+.categoryWrapper {
+  display: flex;
+  margin-top: 60px;
+}
+
+.photosWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.photosWrapper:not(:first-of-type) {
+  margin-left: 30px;
+}
+
+.photosWrapper label {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  line-height: 30px;
+  font-weight: 700;
+}

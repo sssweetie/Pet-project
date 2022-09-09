@@ -132,6 +132,14 @@ button {
   border-radius: 4px;
 }
 
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #1e212c;
+  line-height: 59.8px;
+}
+
 h2 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
