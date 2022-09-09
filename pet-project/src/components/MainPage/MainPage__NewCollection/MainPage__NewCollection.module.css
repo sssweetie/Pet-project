@@ -2,7 +2,7 @@
   max-width: 1920px;
   height: 800px;
   width: 100%;
-
+  margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
