@@ -2,30 +2,38 @@ import React, { useState, useEffect } from "react";
 import styles from "./Advertisment_Time.module.css";
 const Advertisment_Timer = () => {
   const [time, setCurrentTime] = useState("");
-    //TODO TIMER
+
+  //TODO TIMER
   useEffect(() => {
     const interval = setInterval(() => {
       const date = new Date();
+      let currentTime = date.toLocaleTimeString("en-GB", {
+        day: "2-digit",
+      });
+      // .map((item) => (item.search(/[0-9]/) !== -1 ? item : null))
       setCurrentTime(
-        date.toLocaleTimeString("en-US", {
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: false,
-        })
+        currentTime
+          .split("")
+          .filter((n) => {
+            return n.search(/[0-9]/) !== -1;
+          })
+          .join("")
       );
     }, 1000);
+    console.log(time.split(""));
     return () => clearInterval(interval);
   }, []);
+
   return (
-    <div>
-      <p></p>
-      <div>
-        <p>{time}</p>
-        <p>{}</p>
-        <p>{}</p>
-        <p>{}</p>
+    <div className={styles.dateWrapper}>
+      <p className={styles.dateLabel}>limited time offer</p>
+      <div className={styles.numeralWrapper}>
+        <h3>{time.substring(0, 2)}</h3>
+        <h3>{time.substring(2, 4)}</h3>
+        <h3>{time.substring(4, 6)}</h3>
+        <h3>{time.substring(6, 8)}</h3>
       </div>
-      <div>
+      <div className={styles.stringWrapper}>
         <p>Days</p>
         <p>Hours</p>
         <p>Mins</p>

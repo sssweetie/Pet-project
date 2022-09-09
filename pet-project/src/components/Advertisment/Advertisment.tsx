@@ -12,38 +12,43 @@ const Advertisment = () => {
       <div className={styles.blue}>
         <div className={styles.blueWrapper}>
           <p>Summer Collections</p>
-          <h1>Sale Up to 70%</h1>
+          <h2>Sale Up to 70%</h2>
           <button>Explore new prices</button>
         </div>
       </div>
       <div className={styles.gray}>
         <div className={styles.grayWrapper}>
-          <p>Deal of the week</p>
-          <h1>
+          <p className={styles.grayLabels}>Deal of the week</p>
+          <h2>
             Stay Warm With Our<br></br>New Sweaters
-          </h1>
+          </h2>
           <button>Shop now</button>
-          <p></p>
           <Timer></Timer>
         </div>
       </div>
       <div className={styles.pink}>
         <div className={styles.pinkWrapper}>
           <p>New collection</p>
-          <h1>
+          <h2>
             Shoes & Bags<br></br>autumn / winter 2020
-          </h1>
+          </h2>
           <button>See offers →</button>
         </div>
       </div>
       <div className={styles.lightgray}>
         <div className={styles.lightgrayWrapper}>
-          <p></p>
-          <h1></h1>
-          <label></label>
-          <input></input>
-          <button></button>
-          <p></p>
+          <p>For All new Email Subscribers</p>
+          <h2>Get 5% Off & Free Delivery</h2>
+          <label>Email</label>
+          <div className={styles.subscribe}>
+            <input placeholder="Your working email"></input>
+            <button>Subscribe</button>
+          </div>
+          <label>
+            *Sign up to be the first to hear about exclusive deals, special
+            <br></br>
+            offers and upcoming collections.
+          </label>
         </div>
       </div>
     </section>
