@@ -6,7 +6,8 @@ import romper from "../../../img/NewArrivalsSlider/romper.png";
 import jeans from "../../../img/NewArrivalsSlider/jeans.png";
 import dangles from "../../../img/NewArrivalsSlider/dangles.png";
 import shoes from "../../../img/NewArrivalsSlider/shoes.png";
-import heart from "../../../img/NewArrivalsSlider/heart.png";
+import PhotoSlider from "../../MainPage/CommonComponents/PhotoSlider";
+
 const NewArrivals__Slider = () => {
   const [slides, setCurrentSlides] = useState(0);
 
@@ -34,19 +35,6 @@ const NewArrivals__Slider = () => {
     );
   }
 
-  const clothesSlider = clothes.map((item) => {
-    const index = clothes.indexOf(item);
-    return (
-      <a className={styles.photoItem}>
-        <img src={item}></img>
-        <p className={styles.photoName}>{clothesLabels[index]}</p>
-        <p className={styles.photoPrice}>{prices[index]}</p>
-        <a>
-          <img className={styles.heart} src={heart}></img>
-        </a>
-      </a>
-    );
-  });
   //TODO SLIDER
   const changeSlides = (index: number) => {
     setCurrentSlides(index);
@@ -61,7 +49,14 @@ const NewArrivals__Slider = () => {
         </p>
         <a className={styles.advLink}>See the collection here</a>
       </div>
-      <div className={styles.photoWrapper}>{clothesSlider}</div>
+      <div className={styles.photoWrapper}>
+        <PhotoSlider
+          styles={styles}
+          clothes={clothes}
+          clothesLabels={clothesLabels}
+          prices={prices}
+        ></PhotoSlider>
+      </div>
       <div className={styles.sliderButtonsWrapper}>{sliderButtons}</div>
     </div>
   );

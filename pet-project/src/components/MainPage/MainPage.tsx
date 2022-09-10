@@ -6,6 +6,8 @@ import MainPage__NewCollection from "./MainPage__NewCollection/MainPage__NewColl
 import NewArrivals from "../NewArrivals/NewArrivals";
 import Advertisment from "../Advertisment/Advertisment";
 import Popular from "../Popular/Popular";
+import Trending from "../Trending/Trending";
+
 const MainPage = () => {
   return (
     <section>
@@ -16,6 +18,7 @@ const MainPage = () => {
       <NewArrivals></NewArrivals>
       <Advertisment></Advertisment>
       <Popular></Popular>
+      <Trending></Trending>
     </section>
   );
 };
