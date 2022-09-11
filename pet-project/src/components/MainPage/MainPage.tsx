@@ -7,7 +7,7 @@ import NewArrivals from "../NewArrivals/NewArrivals";
 import Advertisment from "../Advertisment/Advertisment";
 import Popular from "../Popular/Popular";
 import Trending from "../Trending/Trending";
-
+import SaleUp from "../SaleUp/SaleUp";
 const MainPage = () => {
   return (
     <section>
@@ -19,6 +19,7 @@ const MainPage = () => {
       <Advertisment></Advertisment>
       <Popular></Popular>
       <Trending></Trending>
+      <SaleUp></SaleUp>
     </section>
   );
 };

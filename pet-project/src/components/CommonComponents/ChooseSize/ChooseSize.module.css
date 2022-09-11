@@ -1,0 +1,16 @@
+.buttonWrapper {
+  margin-left: 16px;
+  margin-top: 20px;
+}
+.buttonSize {
+  border-radius: 4px;
+  border: 1px solid #d7dadd;
+  color: black;
+  padding: 4px 6px;
+}
+.buttonSize:not(:first-of-type) {
+  margin-left: 8px;
+}
+.buttonSize:focus {
+  border: 1px solid #17696a;
+}

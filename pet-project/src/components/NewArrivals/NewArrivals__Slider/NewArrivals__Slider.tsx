@@ -6,7 +6,7 @@ import romper from "../../../img/NewArrivalsSlider/romper.png";
 import jeans from "../../../img/NewArrivalsSlider/jeans.png";
 import dangles from "../../../img/NewArrivalsSlider/dangles.png";
 import shoes from "../../../img/NewArrivalsSlider/shoes.png";
-import PhotoSlider from "../../MainPage/CommonComponents/PhotoSlider";
+import PhotoSlider from "../../CommonComponents/PhotoSlider";
 
 const NewArrivals__Slider = () => {
   const [slides, setCurrentSlides] = useState(0);
