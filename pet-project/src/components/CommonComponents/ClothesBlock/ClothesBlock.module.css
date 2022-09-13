@@ -13,13 +13,9 @@
   margin: 0 auto;
   position: relative;
 }
-
 .buttonWrapper {
   display: flex;
   justify-content: flex-end;
-  position: absolute;
-  right: -15px;
-  top: 104px;
 }
 /* TODO BUTTON DESIGH */
 .contentWrapper .content .buttonWrapper button {
@@ -113,19 +109,15 @@
 
 .sales {
   color: white;
-  background-color: red;
+  background-color: #ff4242;
   position: absolute;
   top: 16px;
   left: 16px;
   font-size: 16px;
   font-weight: 700;
-  padding: 8px 12px;
+  padding: 2px 12px;
   border-radius: 4px;
   line-height: 31.2px;
-}
-
-.test {
-  display: none;
 }
 
 .none {
@@ -136,8 +128,22 @@
   display: block;
 }
 
+.arrow {
+  position: absolute;
+  top: 220px;
+  font-size: 24px;
+}
+
 .arrow:hover {
   color: red;
+}
+
+.arrow:nth-of-type(2) {
+  left: 15px;
+}
+
+.arrow:first-of-type {
+  right: 15px;
 }
 
 .advanced {
@@ -146,7 +152,12 @@
     0px 12px 10px -6px rgba(154, 156, 165, 0.08),
     0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   border-radius: 4px;
-  height: 206px;
+  height: 110px;
+  display: block;
+}
+
+.basic {
+  display: none;
 }
 
 .addToCart {
@@ -156,4 +167,12 @@
   height: 44px;
   margin-left: 16px;
   margin-top: 20px;
+}
+
+.hoverPanel {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 16px;
+  justify-content: space-between;
 }

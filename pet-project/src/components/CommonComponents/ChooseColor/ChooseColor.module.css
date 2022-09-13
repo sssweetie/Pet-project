@@ -7,6 +7,9 @@
   outline: 1px solid #d7dadd;
 }
 
+.circles:focus {
+  outline: 1px solid #17696a;
+}
 .circles:not(:first-of-type) {
   margin-left: 8px;
 }

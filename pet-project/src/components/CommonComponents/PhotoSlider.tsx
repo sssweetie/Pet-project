@@ -10,8 +10,8 @@ const PhotoSlider = (props: any) => {
     return props.sales ? (
       <a
         key={index}
-        onMouseEnter={() => setCurrentNone(true)}
-        onMouseLeave={() => setCurrentNone(false)}
+        onMouseEnter={() => setCurrentNone(false)}
+        onMouseLeave={() => setCurrentNone(true)}
         className={props.styles.photoItem}
       >
         <p
@@ -21,7 +21,7 @@ const PhotoSlider = (props: any) => {
               : `${props.styles.visible} + ${props.styles.arrow}`
           }
         >
-          〈
+          〉
         </p>
         <p
           className={
@@ -30,20 +30,23 @@ const PhotoSlider = (props: any) => {
               : `${props.styles.visible} + ${props.styles.arrow}`
           }
         >
-          〉
+          〈
         </p>
         <p className={props.styles.sales}>-50%</p>
         <img src={item}></img>
+
+        <p className={props.styles.photoName}>{props.clothesLabels[index]}</p>
+        <div className={props.styles.prices}>
+          <h4 className={props.styles.salesPrices}>
+            {props.salesPrices[index]}
+          </h4>
+          <p className={props.styles.oldPrices}>{props.prices[index]}</p>
+        </div>
         <div className={none ? props.styles.basic : props.styles.advanced}>
-          <p className={props.styles.photoName}>{props.clothesLabels[index]}</p>
-          <div className={props.styles.prices}>
-            <h4 className={props.styles.salesPrices}>
-              {props.salesPrices[index]}
-            </h4>
-            <p className={props.styles.oldPrices}>{props.prices[index]}</p>
+          <div className={props.styles.hoverPanel}>
+            <ChooseSize></ChooseSize>
+            <ChooseColor></ChooseColor>
           </div>
-          <ChooseSize></ChooseSize>
-          <ChooseColor></ChooseColor>
           <button className={props.styles.addToCart}>Add to cart</button>
           <img className={props.styles.heart} src={heart}></img>
         </div>
