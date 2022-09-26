@@ -10,6 +10,7 @@ import Trending from "../Trending/Trending";
 import SaleUp from "../SaleUp/SaleUp";
 import MarketStore from "./MarketStore/MarketStore";
 import Advantages from "./Advantages/Advantages";
+import Instagram from "../Instagram/Instagram";
 const MainPage = () => {
   return (
     <section>
@@ -24,6 +25,7 @@ const MainPage = () => {
       <SaleUp></SaleUp>
       <MarketStore></MarketStore>
       <Advantages></Advantages>
+      <Instagram></Instagram>
     </section>
   );
 };

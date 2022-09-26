@@ -1,0 +1,39 @@
+.picture:not(:first-of-type) {
+  margin-left: 15px;
+}
+
+.mainWrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1230px;
+  width: 100%;
+  padding-top: 180px;
+}
+
+.rightSide {
+  margin-left: 80px;
+}
+
+.mainWrapper .leftSide button {
+  width: 240px;
+  height: 50px;
+  margin-top: 60px;
+  position: relative;
+  padding-left: 35px;
+}
+
+.mainWrapper .leftSide p {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.mainWrapper .leftSide img {
+  position: absolute;
+  left: 35px;
+  top: 12.5px;
+}
+.mainWrapper .leftSide h1 {
+  margin-top: 8px;
+}
