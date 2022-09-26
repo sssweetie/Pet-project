@@ -158,3 +158,8 @@ h4 {
   font-weight: 700;
   font-size: 24px;
 }
+
+input {
+  border: #d7dadd 1px solid;
+  border-radius: 4px;
+}

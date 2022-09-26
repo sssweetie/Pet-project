@@ -60,6 +60,10 @@
   line-height: 30px;
 }
 
+.header:hover {
+  color: #17696a;
+}
+
 .leftSide div p,
 .rightSide div p {
   font-family: "Lato", sans-serif;

@@ -13,6 +13,7 @@ import Advantages from "./Advantages/Advantages";
 import Instagram from "../Instagram/Instagram";
 import FashionBlog from "../FashionBlog/FashionBlog";
 import Sponsors from "../Sponsors/Sponsors";
+import Updates from "../Updates/Updates";
 const MainPage = () => {
   return (
     <section>
@@ -30,6 +31,7 @@ const MainPage = () => {
       <Instagram></Instagram>
       <FashionBlog></FashionBlog>
       <Sponsors></Sponsors>
+      <Updates></Updates>
     </section>
   );
 };

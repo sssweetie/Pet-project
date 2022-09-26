@@ -1,0 +1,95 @@
+.mainWrapper {
+  max-width: 1920px;
+  width: 100%;
+  background-color: #f4f5f6;
+  display: flex;
+}
+
+.content {
+  padding: 100px 0 100px 345px;
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.image {
+  padding: 65px 345px 65px 0;
+  width: 461px;
+}
+
+.title {
+  color: #787a80;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+.buttonWrapper {
+  margin-top: 37.5px;
+}
+
+.buttonWrapper button {
+  width: 82px;
+  height: 32px;
+  padding: 6px, 16px, 6px, 16px;
+  border: #d7dadd 1px solid;
+  color: #787a80;
+  letter-spacing: 0.5px;
+}
+
+.buttonWrapper button:not(:first-child) {
+  margin-left: 12px;
+}
+
+.buttonWrapper button:focus {
+  background-color: #17696a;
+  color: white;
+}
+
+.email {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 25.6px;
+  margin-top: 32px;
+}
+.emailInput {
+  display: flex;
+  margin-top: 8px;
+}
+.emailInput input {
+  width: 300px;
+  height: 50px;
+  padding: 0;
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+}
+.emailInput button {
+  padding: 0 40px;
+  width: 154px;
+  height: 52px;
+  background-color: #17696a;
+  color: white;
+  letter-spacing: 0.5px;
+  border-left: 0;
+  border-radius: 0 4px 4px 0;
+}
+.iAgree {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.iAgree input {
+  width: 16px;
+  height: 16px;
+}
+.iAgree p {
+  margin-left: 6px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Lato", sans-serif;
+}
