@@ -14,6 +14,7 @@ const ClothesBlock = (props: any) => {
           <button>→</button>
         </div>
         <div className={styles.photoWrapper}>
+          {/* TODO PHOTOSLIDER MARGINS, STARS*/}
           <PhotoSlider
             sales={props.sales}
             styles={styles}

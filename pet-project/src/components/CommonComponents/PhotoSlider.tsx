@@ -17,8 +17,8 @@ const PhotoSlider = (props: any) => {
         <p
           className={
             none
-              ? props.styles.none
-              : `${props.styles.visible} + ${props.styles.arrow}`
+              ? props.styles.nothing
+              : `${props.styles.something} + ${props.styles.arrow}`
           }
         >
           〉
@@ -26,8 +26,8 @@ const PhotoSlider = (props: any) => {
         <p
           className={
             none
-              ? props.styles.none
-              : `${props.styles.visible} + ${props.styles.arrow}`
+              ? props.styles.nothing
+              : `${props.styles.something} + ${props.styles.arrow}`
           }
         >
           〈

@@ -120,12 +120,18 @@
   line-height: 31.2px;
 }
 
-.none {
+.nothing {
   display: none;
+}
+.something {
+  display: inline-block;
+}
+.none {
+  visibility: 0;
 }
 
 .visible {
-  display: block;
+  visibility: 1;
 }
 
 .arrow {

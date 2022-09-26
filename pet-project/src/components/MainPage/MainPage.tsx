@@ -8,6 +8,8 @@ import Advertisment from "../Advertisment/Advertisment";
 import Popular from "../Popular/Popular";
 import Trending from "../Trending/Trending";
 import SaleUp from "../SaleUp/SaleUp";
+import MarketStore from "./MarketStore/MarketStore";
+import Advantages from "./Advantages/Advantages";
 const MainPage = () => {
   return (
     <section>
@@ -20,6 +22,8 @@ const MainPage = () => {
       <Popular></Popular>
       <Trending></Trending>
       <SaleUp></SaleUp>
+      <MarketStore></MarketStore>
+      <Advantages></Advantages>
     </section>
   );
 };
