@@ -24,9 +24,9 @@ const FashionBlog = () => {
             </div>
             <p className={styles.description}>
               Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
-              faucibus. <br />
-              Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum
-              turpis convallis...
+              faucibus. Tincidunt <br />
+              aliquet sit vel, venenatis nulla. Integer bibendum turpis
+              convallis...
             </p>
           </div>
         </div>

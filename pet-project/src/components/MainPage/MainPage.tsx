@@ -12,6 +12,7 @@ import MarketStore from "./MarketStore/MarketStore";
 import Advantages from "./Advantages/Advantages";
 import Instagram from "../Instagram/Instagram";
 import FashionBlog from "../FashionBlog/FashionBlog";
+import Sponsors from "../Sponsors/Sponsors";
 const MainPage = () => {
   return (
     <section>
@@ -28,6 +29,7 @@ const MainPage = () => {
       <Advantages></Advantages>
       <Instagram></Instagram>
       <FashionBlog></FashionBlog>
+      <Sponsors></Sponsors>
     </section>
   );
 };

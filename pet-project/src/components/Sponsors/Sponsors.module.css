@@ -1,0 +1,13 @@
+.mainWrapper {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 85px;
+}
+
+.mainWrapper img {
+  width: 115px;
+}
