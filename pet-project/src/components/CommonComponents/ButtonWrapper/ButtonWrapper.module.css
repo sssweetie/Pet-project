@@ -1,0 +1,16 @@
+.appStoreWrapper {
+  cursor: pointer;
+  max-width: 160px;
+  width: 100%;
+}
+
+.playMarketWrapper {
+  cursor: pointer;
+  margin-left: 24px;
+  max-width: 160px;
+  width: 100%;
+}
+
+.buttonWrapper {
+  display: flex;
+}

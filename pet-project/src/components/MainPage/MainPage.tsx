@@ -14,6 +14,7 @@ import Instagram from "../Instagram/Instagram";
 import FashionBlog from "../FashionBlog/FashionBlog";
 import Sponsors from "../Sponsors/Sponsors";
 import Updates from "../Updates/Updates";
+import Help from "../Help/Help";
 const MainPage = () => {
   return (
     <section>
@@ -32,6 +33,7 @@ const MainPage = () => {
       <FashionBlog></FashionBlog>
       <Sponsors></Sponsors>
       <Updates></Updates>
+      <Help></Help>
     </section>
   );
 };

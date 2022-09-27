@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./MarketStore.module.css";
 import image from "../../../img/MarketStore/image.png";
-import appStore from "../../../img/MarketStore/appstore.png";
-import playMarket from "../../../img/MarketStore/playmarket.png";
+
+import ButtonWrapper from "../../CommonComponents/ButtonWrapper/ButtonWrapper";
 const MarketStore = () => {
   return (
     <aside className={styles.mainWrapper}>
@@ -11,14 +11,7 @@ const MarketStore = () => {
         <h2 className={styles.contentLabel}>
           Enjoy mobile shopping with our Create<br></br> Store App!
         </h2>
-        <div className={styles.buttonWrapper}>
-          <a className={styles.appStoreWrapper}>
-            <img src={appStore}></img>
-          </a>
-          <a className={styles.playMarketWrapper}>
-            <img src={playMarket}></img>
-          </a>
-        </div>
+        <ButtonWrapper marginTop="60px"></ButtonWrapper>
       </div>
     </aside>
   );

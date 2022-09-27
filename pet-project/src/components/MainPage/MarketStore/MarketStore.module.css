@@ -14,18 +14,6 @@
   padding-left: 317px;
   position: relative;
 }
-.appStoreWrapper {
-  cursor: pointer;
-  max-width: 160px;
-  width: 100%;
-}
-
-.playMarketWrapper {
-  cursor: pointer;
-  margin-left: 24px;
-  max-width: 160px;
-  width: 100%;
-}
 
 .contentLabel {
   line-height: 41.6px;
@@ -39,7 +27,3 @@
   flex-direction: column;
 }
 
-.buttonWrapper {
-  margin-top: 60px;
-  display: flex;
-}

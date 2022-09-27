@@ -1,0 +1,117 @@
+.mainWrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1e212c;
+}
+
+.contentWrapper {
+  padding-top: 60px;
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+  display: flex;
+}
+
+.helpWrapper,
+.shopWrapper,
+.getInTouchWrapper,
+.downloadOurAppWrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 160%;
+  font-size: 16px;
+}
+
+.helpWrapper p,
+.shopWrapper p {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.helpWrapper a,
+.shopWrapper a,
+.getInTouchWrapper div p:last-of-type {
+  opacity: 0.6;
+}
+
+.helpWrapper a:not(:first-of-type),
+.shopWrapper a:not(:first-of-type),
+.getInTouchWrapper div:nth-of-type(2) {
+  margin-top: 4px;
+}
+
+.helpWrapper a:first-of-type,
+.shopWrapper a:first-of-type,
+.getInTouchWrapper div:first-of-type {
+  margin-top: 12px;
+}
+
+.shopWrapper,
+.getInTouchWrapper {
+  margin-left: 150px;
+}
+
+.getInTouchWrapper div {
+  display: flex;
+}
+
+.imageWrapper {
+  margin-top: 24px;
+  display: flex;
+}
+
+.images {
+  cursor: pointer;
+}
+
+.images:not(:first-of-type) {
+  margin-left: 12px;
+}
+
+.downloadOurAppWrapper {
+  margin-left: 150px;
+}
+
+.line {
+  border: 1px #ffffff solid;
+  min-width: 1920px;
+  width: 100%;
+  margin-top: 40px;
+  margin: 40px auto 0 auto;
+  opacity: 0.15;
+}
+
+.authorsWrapper {
+  display: flex;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 18px;
+  margin: 24px auto 0 auto;
+  max-width: 1230px;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.authorsWrapper img {
+  margin-left: 4px;
+}
+
+.authorsWrapper p:last-of-type {
+  margin-left: 4px;
+}
+
+.authorsWrapper a {
+  font-size: 16px;
+  line-height: 25.6px;
+  font-weight: 700;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: 0;
+}
