@@ -20,7 +20,6 @@ const Advertisment_Timer = () => {
           .join("")
       );
     }, 1000);
-    console.log(time.split(""));
     return () => clearInterval(interval);
   }, []);
 

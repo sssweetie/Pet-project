@@ -6,12 +6,16 @@ import reportWebVitals from "./reportWebVitals";
 import "./fonts/Lato/Lato-Regular.ttf";
 import "./fonts/Ubuntu/Ubuntu-Regular.ttf";
 import "./fonts/Lato/Lato-Bold.ttf";
+import { Provider } from "react-redux";
+import store from "./Redux/redux-store";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 

@@ -15,13 +15,14 @@ import FashionBlog from "../FashionBlog/FashionBlog";
 import Sponsors from "../Sponsors/Sponsors";
 import Updates from "../Updates/Updates";
 import Help from "../Help/Help";
+import MainPage__NewCollection_Container from "./MainPage__NewCollection/MainPage__NewCollection_Container";
 const MainPage = () => {
   return (
     <section>
       <MainPage__Header></MainPage__Header>
       <MainPage__Navigation></MainPage__Navigation>
       <MainPage__Advertisment></MainPage__Advertisment>
-      <MainPage__NewCollection></MainPage__NewCollection>
+      <MainPage__NewCollection_Container></MainPage__NewCollection_Container>
       <NewArrivals></NewArrivals>
       <Advertisment></Advertisment>
       <Popular></Popular>
