@@ -1,22 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 //TODO: MAKE IT CLASS COMPONENT
 import heart from "../../img/NewArrivalsSlider/heart.png";
 import ChooseSize from "./ChooseSize/ChooseSize";
 import ChooseColor from "./ChooseColor/ChooseColor";
 const PhotoSlider = (props: any) => {
-  const [none, setCurrentNone] = useState(true);
   return props.clothes.map((item: any) => {
     const index = props.clothes.indexOf(item);
     return props.sales ? (
       <a
         key={index}
-        onMouseEnter={() => setCurrentNone(false)}
-        onMouseLeave={() => setCurrentNone(true)}
+        onMouseEnter={() => props.changeVisibility(false)}
+        onMouseLeave={() => props.changeVisibility(true)}
         className={props.styles.photoItem}
       >
         <p
           className={
-            none
+            props.contentVisibility
               ? props.styles.nothing
               : `${props.styles.something} + ${props.styles.arrow}`
           }
@@ -25,7 +24,7 @@ const PhotoSlider = (props: any) => {
         </p>
         <p
           className={
-            none
+            props.contentVisibility
               ? props.styles.nothing
               : `${props.styles.something} + ${props.styles.arrow}`
           }
@@ -42,7 +41,11 @@ const PhotoSlider = (props: any) => {
           </h4>
           <p className={props.styles.oldPrices}>{props.prices[index]}</p>
         </div>
-        <div className={none ? props.styles.basic : props.styles.advanced}>
+        <div
+          className={
+            props.contentVisibility ? props.styles.basic : props.styles.advanced
+          }
+        >
           <div className={props.styles.hoverPanel}>
             <ChooseSize></ChooseSize>
             <ChooseColor></ChooseColor>

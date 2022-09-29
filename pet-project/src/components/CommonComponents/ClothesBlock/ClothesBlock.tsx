@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoSlider from "../PhotoSlider";
+import PhotoSlider_Container from "../PhotoSlider_Container";
 import styles from "./ClothesBlock.module.css";
 const ClothesBlock = (props: any) => {
   return (
@@ -15,14 +15,14 @@ const ClothesBlock = (props: any) => {
         </div>
         <div className={styles.photoWrapper}>
           {/* TODO PHOTOSLIDER MARGINS, STARS*/}
-          <PhotoSlider
+          <PhotoSlider_Container
             sales={props.sales}
             styles={styles}
             clothes={props.clothes}
             clothesLabels={props.clothesLabels}
             prices={props.prices}
             salesPrices={props.salesPrices}
-          ></PhotoSlider>
+          ></PhotoSlider_Container>
         </div>
         <button className={styles.lastButton}>{props.buttonName}</button>
       </div>

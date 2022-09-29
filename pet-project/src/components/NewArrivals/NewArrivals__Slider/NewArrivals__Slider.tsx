@@ -6,7 +6,7 @@ import romper from "../../../img/NewArrivalsSlider/romper.png";
 import jeans from "../../../img/NewArrivalsSlider/jeans.png";
 import dangles from "../../../img/NewArrivalsSlider/dangles.png";
 import shoes from "../../../img/NewArrivalsSlider/shoes.png";
-import PhotoSlider from "../../CommonComponents/PhotoSlider";
+import PhotoSlider_Container from "../../CommonComponents/PhotoSlider_Container";
 
 const NewArrivals__Slider = () => {
   const [slides, setCurrentSlides] = useState(0);
@@ -50,12 +50,12 @@ const NewArrivals__Slider = () => {
         <a className={styles.advLink}>See the collection here</a>
       </div>
       <div className={styles.photoWrapper}>
-        <PhotoSlider
+        <PhotoSlider_Container
           styles={styles}
           clothes={clothes}
           clothesLabels={clothesLabels}
           prices={prices}
-        ></PhotoSlider>
+        ></PhotoSlider_Container>
       </div>
       <div className={styles.sliderButtonsWrapper}>{sliderButtons}</div>
     </div>
