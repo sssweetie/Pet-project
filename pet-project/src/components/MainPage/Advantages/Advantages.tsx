@@ -18,52 +18,31 @@ const Advantages = () => {
     "Secure Online Payment",
   ];
   const pictures = [delivery, callCenter, shield, creditCard];
+  const advantages = [];
 
-  return (
-    <section className={styles.mainWrapper}>
-      <div className={styles.contentWrapper}>
-        <img style={{ width: "48px" }} src={pictures[0]}></img>
-        <p>{labels[0]}</p>
-        <p>{description[0]}</p>
-      </div>
-      <p
-        style={{
-          borderLeft: "1px solid #DADBDD",
-          marginLeft: "45px",
-          height: "136px",
-        }}
-      ></p>
-      <div className={styles.contentWrapper}>
-        <img style={{ width: "48px" }} src={pictures[1]}></img>
-        <p>{labels[1]}</p>
-        <p>{description[1]}</p>
-      </div>
-      <p
-        style={{
-          borderLeft: "1px solid #DADBDD",
-          marginLeft: "45px",
-          height: "136px",
-        }}
-      ></p>
-      <div className={styles.contentWrapper}>
-        <img style={{ width: "48px" }} src={pictures[2]}></img>
-        <p>{labels[2]}</p>
-        <p>{description[2]}</p>
-      </div>
-      <p
-        style={{
-          borderLeft: "1px solid #DADBDD",
-          marginLeft: "45px",
-          height: "136px",
-        }}
-      ></p>
-      <div className={styles.contentWrapper}>
-        <img style={{ width: "48px" }} src={pictures[3]}></img>
-        <p>{labels[3]}</p>
-        <p>{description[3]}</p>
-      </div>
-    </section>
-  );
+  for (let i = 0; i < 7; i++) {
+    if (i % 2 === 0) {
+      advantages.push(
+        <div className={styles.contentWrapper}>
+          <img style={{ width: "48px" }} src={pictures[i / 2]}></img>
+          <p>{labels[i / 2]}</p>
+          <p>{description[i / 2]}</p>
+        </div>
+      );
+    } else {
+      advantages.push(
+        <p
+          style={{
+            borderLeft: "1px solid #DADBDD",
+            marginLeft: "45px",
+            height: "136px",
+          }}
+        ></p>
+      );
+    }
+  }
+
+  return <section className={styles.mainWrapper}>{advantages}</section>;
 };
 
 export default Advantages;
