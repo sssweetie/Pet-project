@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Advertisment_Time.module.css";
+// make it class component and use life methods
 const Advertisment_Timer = () => {
   const [time, setCurrentTime] = useState("");
 
