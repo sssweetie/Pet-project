@@ -42,7 +42,7 @@
 .lastButton {
   width: 210px;
   height: 52px;
-  margin-top: 96px;
+  margin-top: -12px;
   align-self: center;
 }
 .photoItem {

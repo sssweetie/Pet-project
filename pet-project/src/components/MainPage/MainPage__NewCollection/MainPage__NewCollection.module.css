@@ -70,8 +70,8 @@ div.mainContent div.box label:hover {
   color: inherit;
   border: none;
   padding: 0;
-  opacity: 0.6;
-  border-bottom: 2px solid rgba(66, 69, 81, 0.6);
+  opacity: 0.3;
+  border-bottom: 2px solid rgba(66, 69, 81, 1);
   width: 178px;
   margin-left: 4px;
   border-radius: 0;

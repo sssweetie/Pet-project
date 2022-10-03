@@ -1,7 +1,3 @@
-.picture:not(:first-of-type) {
-  margin-left: 15px;
-}
-
 .mainWrapper {
   display: flex;
   margin: 0 auto;
@@ -10,8 +6,12 @@
   padding-top: 180px;
 }
 
+.picture:not(:first-of-type) {
+  margin-left: 15px;
+}
+
 .rightSide {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .mainWrapper .leftSide button {
