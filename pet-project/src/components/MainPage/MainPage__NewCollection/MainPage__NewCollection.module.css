@@ -64,15 +64,25 @@ div.mainContent div.box label:hover {
 }
 
 .sliderItem {
-  font-size: 28px;
   font-family: "Ubuntu", sans-serif;
-  margin-right: 4px;
-  padding-right: 150px;
-  padding-bottom: 12px;
+  font-size: 28px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
   opacity: 0.6;
   border-bottom: 2px solid rgba(66, 69, 81, 0.6);
-  -webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  width: 178px;
+  margin-left: 4px;
+  border-radius: 0;
+  padding-right: 150px;
+  padding-bottom: 12px;
+}
+
+.sliderItem:focus {
+  border-bottom: 2px solid #424551;
+  color: #424551;
+  opacity: 1;
 }
 
 .noBackgroundButton {

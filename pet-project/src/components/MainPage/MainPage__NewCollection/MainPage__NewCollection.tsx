@@ -12,13 +12,15 @@ const MainPage__NewCollection = (props: any) => {
 
   for (let i = 1; i < 5; i++) {
     slider.push(
-      <label
-        key={i}
-        onClick={() => changeSlide(i - 1)}
-        className={styles.sliderItem}
-      >
-        0{i}
-      </label>
+      <div className={styles.sliderWrapper}>
+        <button
+          key={i}
+          onClick={() => changeSlide(i - 1)}
+          className={styles.sliderItem}
+        >
+          0{i}
+        </button>
+      </div>
     );
   }
 
