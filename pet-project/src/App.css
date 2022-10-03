@@ -162,4 +162,9 @@ h4 {
 input {
   border: #d7dadd 1px solid;
   border-radius: 4px;
+  text-indent: 16px;
+}
+
+input::placeholder {
+  padding-left: 0px;
 }

@@ -33,7 +33,7 @@ const PhotoSlider = (props: any) => {
         </p>
         <p className={props.styles.sales}>-50%</p>
         <img src={item}></img>
-
+        <img className={props.styles.heart} src={heart}></img>
         <p className={props.styles.photoName}>{props.clothesLabels[index]}</p>
         <div className={props.styles.prices}>
           <h4 className={props.styles.salesPrices}>
@@ -51,17 +51,14 @@ const PhotoSlider = (props: any) => {
             <ChooseColor></ChooseColor>
           </div>
           <button className={props.styles.addToCart}>Add to cart</button>
-          <img className={props.styles.heart} src={heart}></img>
         </div>
       </a>
     ) : (
       <a className={props.styles.photoItem}>
         <img src={item}></img>
+        <img className={props.styles.heart} src={heart}></img>
         <p className={props.styles.photoName}>{props.clothesLabels[index]}</p>
         <p className={props.styles.photoPrice}>{props.prices[index]}</p>
-        <a>
-          <img className={props.styles.heart} src={heart}></img>
-        </a>
       </a>
     );
   });
