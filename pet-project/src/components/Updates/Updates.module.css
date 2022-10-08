@@ -7,15 +7,13 @@
 }
 
 .content {
-  padding: 100px 0 100px 345px;
-  max-width: 1230px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 100px 0 100px 335px;
 }
 
 .image {
   padding: 65px 345px 65px 0;
   width: 461px;
+  margin-left: 274px;
 }
 
 .title {
@@ -61,7 +59,7 @@
   margin-top: 8px;
 }
 .emailInput input {
-  width: 300px;
+  width: 345px;
   height: 50px;
   padding: 0;
   border-right: 0;
@@ -76,6 +74,7 @@
   letter-spacing: 0.5px;
   border-left: 0;
   border-radius: 0 4px 4px 0;
+  padding: 0 40px;
 }
 .iAgree {
   display: flex;

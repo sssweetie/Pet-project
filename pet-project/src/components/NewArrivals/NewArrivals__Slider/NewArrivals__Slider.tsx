@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./NewArrivals__Slider.module.css";
 import cap from "../../../img/NewArrivalsSlider/cap.png";
 import glasses from "../../../img/NewArrivalsSlider/glasses.png";
@@ -6,11 +6,9 @@ import romper from "../../../img/NewArrivalsSlider/romper.png";
 import jeans from "../../../img/NewArrivalsSlider/jeans.png";
 import dangles from "../../../img/NewArrivalsSlider/dangles.png";
 import shoes from "../../../img/NewArrivalsSlider/shoes.png";
-import PhotoSlider_Container from "../../CommonComponents/PhotoSlider_Container";
+import SliderItem from "../../CommonComponents/SliderItem/SliderItem";
 
 const NewArrivals__Slider = () => {
-  const [slides, setCurrentSlides] = useState(0);
-
   const clothes = [cap, glasses, romper, jeans, dangles, shoes];
 
   const clothesLabels = [
@@ -27,18 +25,21 @@ const NewArrivals__Slider = () => {
   let sliderButtons = [];
 
   for (let i = 0; i < 6; i++) {
-    sliderButtons.push(
-      <button
-        onClick={() => changeSlides(i)}
-        className={styles.sliderButtons}
-      ></button>
-    );
+    sliderButtons.push(<button className={styles.sliderButtons}></button>);
   }
 
-  //TODO SLIDER
-  const changeSlides = (index: number) => {
-    setCurrentSlides(index);
-  };
+  let backgroundImageClothes = [];
+  for (let i = 0; i < prices.length; i++) {
+    backgroundImageClothes.push(
+      <SliderItem
+        backgroundImage={clothes[i]}
+        clothesLabels={clothesLabels[i]}
+        pricesLabels={prices[i]}
+        width="285px"
+        height="320px"
+      ></SliderItem>
+    );
+  }
 
   return (
     <div className={styles.wrapper}>
@@ -50,12 +51,53 @@ const NewArrivals__Slider = () => {
         <a className={styles.advLink}>See the collection here</a>
       </div>
       <div className={styles.photoWrapper}>
-        <PhotoSlider_Container
-          styles={styles}
-          clothes={clothes}
-          clothesLabels={clothesLabels}
-          prices={prices}
-        ></PhotoSlider_Container>
+        <SliderItem
+          backgroundImage={clothes[0]}
+          clothesLabels={clothesLabels[0]}
+          pricesLabels={prices[0]}
+          width="285px"
+          height="320px"
+        ></SliderItem>
+        <SliderItem
+          backgroundImage={clothes[1]}
+          clothesLabels={clothesLabels[1]}
+          pricesLabels={prices[1]}
+          width="285px"
+          height="320px"
+          marginLeft="30px"
+        ></SliderItem>
+        <SliderItem
+          backgroundImage={clothes[2]}
+          clothesLabels={clothesLabels[2]}
+          pricesLabels={prices[2]}
+          width="285px"
+          height="320px"
+          marginLeft="30px"
+        ></SliderItem>
+        <SliderItem
+          backgroundImage={clothes[3]}
+          clothesLabels={clothesLabels[3]}
+          pricesLabels={prices[3]}
+          width="285px"
+          height="320px"
+          marginLeft="30px"
+        ></SliderItem>
+        <SliderItem
+          backgroundImage={clothes[4]}
+          clothesLabels={clothesLabels[4]}
+          pricesLabels={prices[4]}
+          width="285px"
+          height="320px"
+          marginLeft="30px"
+        ></SliderItem>
+        <SliderItem
+          backgroundImage={clothes[5]}
+          clothesLabels={clothesLabels[5]}
+          pricesLabels={prices[5]}
+          width="285px"
+          height="320px"
+          marginLeft="30px"
+        ></SliderItem>
       </div>
       <div className={styles.sliderButtonsWrapper}>{sliderButtons}</div>
     </div>

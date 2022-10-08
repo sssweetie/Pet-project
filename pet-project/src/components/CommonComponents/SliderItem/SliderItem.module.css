@@ -1,0 +1,24 @@
+.background {
+}
+
+.heart {
+  position: relative;
+  top: -48px;
+  right: 16px;
+  float: right;
+}
+
+.description {
+  padding-left: 16px;
+}
+
+.description p {
+  font-size: 18px;
+  margin-top: 16px;
+  line-height: 27px;
+}
+
+.description h5 {
+  margin-top: 8px;
+  line-height: 26px;
+}

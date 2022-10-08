@@ -1,20 +1,14 @@
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 180px;
-}
-
-.photoItem {
-  max-width: 285px;
+  max-width: 1230px;
   width: 100%;
-  position: relative;
-}
-
-.photoItem:not(:first-child) {
-  margin-left: 30px;
 }
 
 .photoWrapper {
   margin-top: 60px;
-  padding: 0 17.5px;
   display: flex;
   font-family: "Lato", sans-serif;
 }
@@ -36,11 +30,6 @@
 .photoName,
 .photoPrice {
   margin-left: 16px;
-}
-.heart {
-  position: absolute;
-  right: 16px;
-  bottom: 86px;
 }
 
 .textWrapper {
@@ -74,13 +63,9 @@
 }
 
 .sliderButtons {
-  background: none;
-  color: inherit;
   border: none;
   padding: 0;
-  font: inherit;
   cursor: pointer;
-  outline: inherit;
   border-bottom: 3px solid #b3b7bc;
   width: 30px;
 }
