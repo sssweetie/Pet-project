@@ -22,19 +22,6 @@ div.mainContent div.box label:hover {
   cursor: pointer;
 }
 
-.active {
-  font-size: 28px;
-  font-family: "Ubuntu", sans-serif;
-  margin-right: 4px;
-  padding-right: 150px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid rgba(66, 69, 81, 1);
-  -webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-  color: rgb(66, 69, 81);
-  opacity: 1;
-}
-
 .boxTitles {
   padding: 140px 0 0 345px;
   display: flex;
@@ -63,7 +50,7 @@ div.mainContent div.box label:hover {
   display: flex;
 }
 
-.sliderItem {
+.sliderItemPassive {
   font-family: "Ubuntu", sans-serif;
   font-size: 28px;
   background: none;
@@ -79,10 +66,20 @@ div.mainContent div.box label:hover {
   padding-bottom: 12px;
 }
 
-.sliderItem:focus {
-  border-bottom: 2px solid #424551;
+.sliderItemActive {
   color: #424551;
   opacity: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 28px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #424551;
+  padding: 0;
+  width: 178px;
+  margin-left: 4px;
+  border-radius: 0;
+  padding-right: 150px;
+  padding-bottom: 12px;
 }
 
 .noBackgroundButton {

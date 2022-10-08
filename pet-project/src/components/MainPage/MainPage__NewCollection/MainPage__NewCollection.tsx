@@ -10,37 +10,37 @@ const MainPage__NewCollection = (props: any) => {
   let slider: JSX.Element[] = [];
   const slides = [main, main2, main3, main4];
 
-  for (let i = 1; i < 5; i++) {
+  for (let i = 0; i < 4; i++) {
     slider.push(
-      <div className={styles.sliderWrapper}>
-        <button
-          key={i}
-          onClick={() => changeSlide(i - 1)}
-          className={styles.sliderItem}
-        >
-          0{i}
-        </button>
-      </div>
+      <button
+        key={i}
+        onClick={() => changeSlide(i)}
+        className={
+          props.active[i] ? styles.sliderItemActive : styles.sliderItemPassive
+        }
+      >
+        0{i + 1}
+      </button>
     );
   }
 
   const changeSlide = (index: number) => {
     if (index === 4) index = 0;
     else if (index === -1) index = 3;
-    slider.forEach((item) => {
-      return slider.indexOf(item) === index ? (
-        <label className={styles.active}>0{index}</label>
-      ) : (
-        item
-      );
-    });
     props.changeBackground(index);
+    let copyActive = props.active.map((active: boolean, number: number) => {
+      return number === index ? true : false;
+    });
+    props.activePassive(copyActive);
   };
 
   return (
     <div
       className={styles.mainContent}
-      style={{ backgroundImage: `url(${slides[props.currentBackground]})` }}
+      style={{
+        backgroundImage: `url(${slides[props.currentBackground]})`,
+        transition: "background-image 0.2s ease-in-out",
+      }}
     >
       <div className={styles.box}>
         <div className={styles.boxTitles}>
