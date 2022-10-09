@@ -1,6 +1,3 @@
-.background {
-}
-
 .heart {
   position: relative;
   top: -48px;
@@ -18,7 +15,32 @@
   line-height: 27px;
 }
 
+.prices {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.description .prices h4 {
+  color: #ff4242;
+}
 .description h5 {
   margin-top: 8px;
   line-height: 26px;
+}
+
+.description .prices label {
+  font-family: "Lato", sans-serif;
+  color: #787a80;
+  text-decoration: line-through;
+  margin-left: 12px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.sales {
+  background-color: #ff4242;
+  color: white;
+  width: 54px;
+  height: 28px;
+  text-align: center;
 }

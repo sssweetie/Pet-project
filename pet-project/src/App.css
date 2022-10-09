@@ -175,3 +175,7 @@ input {
 input::placeholder {
   padding-left: 0px;
 }
+
+p {
+  font-family: "Lato", sans-serif;
+}

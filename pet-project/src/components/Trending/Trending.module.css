@@ -1,0 +1,50 @@
+.wrapper {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.panel,
+.photosWrapper,
+.arrows {
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  max-width: 1920px;
+  width: 100%;
+  background-color: #e5e8ed;
+  height: 950px;
+  margin: 0 auto;
+}
+.photosWrapper {
+  margin-top: 60px;
+}
+.panel {
+  padding-top: 80px;
+  justify-content: space-between;
+}
+
+.panel p {
+  font-size: 16px;
+  font-weight: 900;
+  border: 12px solid transparent;
+  border-radius: 50%;
+}
+
+.panel p:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #17696a;
+  border-radius: 50%;
+  border: 12px solid #17696a;
+}
+
+.explore {
+  width: 210px;
+  align-self: center;
+  margin-top: 96px;
+  height: 52px;
+}
