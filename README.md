@@ -1,4 +1,5 @@
 # Online clothing store
+## Все коммиты в ветке main page. All commits inside "main page" branch
 Данный вебсайт разрабатывался для закрепления React-Redux технологий, RestAPI запросов и ознакомлением с TypeScript.
 
 Current website is developed for learning React-Redux, RestAPI and TypeScript.
