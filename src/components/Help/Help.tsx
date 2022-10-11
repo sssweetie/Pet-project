@@ -1,15 +1,15 @@
 import React from "react";
 import ButtonWrapper from "../CommonComponents/ButtonWrapper/ButtonWrapper";
 import styles from "./Help.module.css";
-import facebook from "../../img/Help/Facebook.png";
-import instagram from "../../img/Help/Instagram.png";
-import pinterest from "../../img/Help/Pinterest.png";
-import twitter from "../../img/Help/Twitter.png";
-import youtube from "../../img/Help/YouTube.png";
-import heart from "../../img/Help/heart.png";
+import facebook from "../../img/Help/Facebook.svg";
+import instagram from "../../img/Help/Instagram.svg";
+import pinterest from "../../img/Help/Pinterest.svg";
+import twitter from "../../img/Help/Twitter.svg";
+import youtube from "../../img/Help/YouTube.svg";
+import heart from "../../img/Help/heart.svg";
 
 const Help = () => {
-  const images = [facebook, instagram, pinterest, twitter, youtube];
+  const images = [facebook, instagram, twitter, youtube, pinterest];
   const links = [];
   for (let i = 0; i < images.length; i++) {
     links.push(
@@ -61,7 +61,9 @@ const Help = () => {
           <p>© All rights reserved. Made with</p>
           <img src={heart}></img>
           <p>by Createx Studio </p>
-          <a>Go to top</a>
+          <a className={styles.goToTop} href="#top">
+            Go to top
+          </a>
         </div>
       </footer>
     </section>

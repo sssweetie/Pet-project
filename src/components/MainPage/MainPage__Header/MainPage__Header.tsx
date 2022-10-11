@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MainPage__Header.module.css";
 const MainPage__Header = () => {
   return (
-    <header className={styles.header}>
+    <header id="top" className={styles.header}>
       <div className={styles.container}>
         <p>
           Available 24/7 at
