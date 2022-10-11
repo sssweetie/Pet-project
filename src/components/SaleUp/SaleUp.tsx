@@ -17,7 +17,7 @@ const SaleUp = () => {
     <section className={styles.back} style={{ backgroundColor: "#FFFFFF" }}>
       <div className={styles.wrapper}>
         <div className={styles.panel}>
-          <h1>Sake up to 70%</h1>
+          <h1>Sale up to 70%</h1>
           <div className={styles.arrows}>
             <p>&larr;</p>
             <p>&rarr;</p>
@@ -57,7 +57,7 @@ const SaleUp = () => {
             sales="-20%"
           ></SliderItem>
         </div>
-        <button className={styles.explore}>Explore top sales</button>
+        <button className={styles.exploreSalesUp}>See all sale products</button>
       </div>
     </section>
   );

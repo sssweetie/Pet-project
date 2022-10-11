@@ -4,6 +4,7 @@
   background-color: #1e212c;
   margin: 0 auto;
   display: flex;
+  margin-top: 100px;
 }
 
 .picture {
@@ -11,7 +12,6 @@
   width: 100%;
   top: -30px;
   height: 330px;
-
   position: relative;
 }
 

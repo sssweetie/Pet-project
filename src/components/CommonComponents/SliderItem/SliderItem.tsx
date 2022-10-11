@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import styles from "./SliderItem.module.css";
 import heart from "../../../img/NewArrivalsSlider/heart.png";
 import heartActive from "../../../img/NewArrivalsSlider/heartActive.png";
+import HoverItemPanel from "./HoverItemPanel/HoverItemPanel";
 const SliderItem = (props: any) => {
   const [active, setActive] = useState(true);
+  const [visibility, setVisibility] = useState(false);
   return props.active === true ? (
-    <div style={{ marginLeft: props.marginLeft }}>
+    <div
+      style={{ marginLeft: props.marginLeft }}
+      onMouseEnter={() => setVisibility(true)}
+      onMouseLeave={() => setVisibility(false)}
+    >
       <div
         style={{
           backgroundImage: `url(${props.backgroundImage})`,
@@ -22,13 +28,23 @@ const SliderItem = (props: any) => {
         onMouseLeave={() => setActive(true)}
         style={{ cursor: "pointer" }}
       ></img>
-      <div></div>
-      <div className={styles.description}>
+      <div
+        className={
+          visibility
+            ? `${styles.description} + ${styles.shadow}`
+            : styles.description
+        }
+      >
         <p>{props.clothesLabels}</p>
         <div className={styles.prices}>
           <h4>{props.pricesLabels}</h4>
           <label>{props.oldPricesLabels}</label>
         </div>
+        {visibility ? (
+          <HoverItemPanel visibility={visibility}></HoverItemPanel>
+        ) : (
+          <HoverItemPanel visibility={visibility}></HoverItemPanel>
+        )}
       </div>
     </div>
   ) : (

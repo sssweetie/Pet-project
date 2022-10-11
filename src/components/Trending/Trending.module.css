@@ -43,8 +43,17 @@
 }
 
 .explore {
-  width: 210px;
-  align-self: center;
   margin-top: 96px;
+  width: 210px;
+}
+
+.exploreSalesUp {
+  margin-top: 24px;
+  width: 234px;
+}
+
+.explore,
+.exploreSalesUp {
+  align-self: center;
   height: 52px;
 }
