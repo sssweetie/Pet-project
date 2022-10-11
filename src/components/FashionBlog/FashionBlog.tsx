@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./FashionBlog.module.css";
-import blue from "../../img/FashionBlog/blue.png";
-import yellow from "../../img/FashionBlog/yellow.png";
-import chat from "../../img/FashionBlog/chat.png";
+import blue from "../../img/FashionBlog/blue.svg";
+import yellow from "../../img/FashionBlog/yellow.svg";
+import chat from "../../img/FashionBlog/chat.svg";
 const FashionBlog = () => {
   return (
     <section className={styles.mainWrapper}>
@@ -20,7 +20,9 @@ const FashionBlog = () => {
               <p></p>
               <p>August 24, 2020</p>
               <p></p>
-              <p>No comments</p>
+              <p className={styles.chat}>
+                <img src={chat}></img>No comments
+              </p>
             </div>
             <p className={styles.description}>
               Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
@@ -41,7 +43,9 @@ const FashionBlog = () => {
               <p></p>
               <p>July 16, 2020</p>
               <p></p>
-              <p>4 comments</p>
+              <p className={styles.chat}>
+                <img src={chat}></img>4 comments
+              </p>
             </div>
             <p className={styles.description}>
               Porta habitant vitae quam interdum. Leo viverra non volutpat

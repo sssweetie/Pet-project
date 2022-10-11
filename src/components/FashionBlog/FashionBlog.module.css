@@ -93,3 +93,11 @@
     0px 12px 10px -6px rgba(154, 156, 165, 0.08),
     0px 4px 4px -4px rgba(30, 33, 44, 0.05);
 }
+
+.chat {
+  display: flex;
+}
+
+.chat img {
+  margin-right: 9px;
+}

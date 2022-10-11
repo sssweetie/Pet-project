@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Advantages.module.css";
-import delivery from "../../../img/Advantages/delivery.png";
-import callCenter from "../../../img/Advantages/callcenter.png";
-import shield from "../../../img/Advantages/shield.png";
-import creditCard from "../../../img/Advantages/creditcard.png";
+import delivery from "../../../img/Advantages/delivery.svg";
+import callCenter from "../../../img/Advantages/callcenter.svg";
+import shield from "../../../img/Advantages/shield.svg";
+import creditCard from "../../../img/Advantages/creditcard.svg";
 const Advantages = () => {
   const description = [
     "Get free shipping over $250",

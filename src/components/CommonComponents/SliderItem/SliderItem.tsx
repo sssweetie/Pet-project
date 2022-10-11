@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./SliderItem.module.css";
-import heart from "../../../img/NewArrivalsSlider/heart.png";
+import heart from "../../../img/NewArrivalsSlider/heart.svg";
 import heartActive from "../../../img/NewArrivalsSlider/heartActive.png";
 import HoverItemPanel from "./HoverItemPanel/HoverItemPanel";
 const SliderItem = (props: any) => {

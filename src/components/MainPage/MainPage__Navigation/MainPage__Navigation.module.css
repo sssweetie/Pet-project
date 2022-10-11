@@ -5,11 +5,9 @@
   max-width: 1230px;
   height: 88px;
   width: 100%;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   font-family: "Lato", sans-serif;
   font-weight: 700;
 }
@@ -24,7 +22,6 @@ nav section a:not(:first-child) {
   padding-left: 16px;
 }
 .searchBar {
-  max-width: 390px;
   box-sizing: border-box;
   width: 100%;
   padding: 12px 0;
@@ -37,10 +34,8 @@ nav section a:not(:first-child) {
 }
 .heart {
   margin-left: 48px;
-  display: flex;
 }
 .cart {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -57,10 +52,20 @@ a.cart label {
   color: white;
   background-color: #03cea4;
 }
-/* TODO ICON INPUT */
-/* .lensIcon {
-  position: absolute;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-image: url("../../../img/MainNavigation/Lens.png");
-} */
+.inputWrapper {
+  max-width: 390px;
+  width: 100%;
+}
+.lens {
+  right: 32px;
+  position: relative;
+  height: 16px;
+  align-self: center;
+}
+
+.inputWrapper,
+.cart,
+.heart,
+.nav {
+  display: flex;
+}

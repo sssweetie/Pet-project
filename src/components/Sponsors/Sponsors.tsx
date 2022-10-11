@@ -1,11 +1,12 @@
 import React from "react";
-import image1 from "../../img/Sponsors/image1.png";
-import image2 from "../../img/Sponsors/image2.png";
-import image3 from "../../img/Sponsors/image3.png";
-import image4 from "../../img/Sponsors/image4.png";
-import image5 from "../../img/Sponsors/image5.png";
-import image6 from "../../img/Sponsors/image6.png";
+import image1 from "../../img/Sponsors/image1.svg";
+import image2 from "../../img/Sponsors/image2.svg";
+import image3 from "../../img/Sponsors/image3.svg";
+import image4 from "../../img/Sponsors/image4.svg";
+import image5 from "../../img/Sponsors/image5.svg";
+import image6 from "../../img/Sponsors/image6.svg";
 import styles from "./Sponsors.module.css";
+
 const Sponsors = () => {
   return (
     <section className={styles.mainWrapper}>

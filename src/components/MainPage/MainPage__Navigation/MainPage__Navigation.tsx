@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "../../../img/MainNavigation/Logo.png";
-import heart from "../../../img/MainNavigation/Heart.png";
-import cart from "../../../img/MainNavigation/Cart.png";
+import logo from "../../../img/MainNavigation/Logo.svg";
+import heart from "../../../img/MainNavigation/Heart.svg";
+import cart from "../../../img/MainNavigation/Cart.svg";
+import lens from "../../../img/MainNavigation/Lens.svg";
 import styles from "./MainPage__Navigation.module.css";
 const MainPage__Navigation = () => {
   return (
@@ -14,11 +15,14 @@ const MainPage__Navigation = () => {
         <a>Boys</a>
         <a>Sale</a>
       </section>
-      <i className={styles.lensIcon}></i>
-      <input
-        className={styles.searchBar}
-        placeholder="Search for products..."
-      ></input>
+      <div className={styles.inputWrapper}>
+        <input
+          className={styles.searchBar}
+          placeholder="Search for products..."
+        ></input>
+        <img className={styles.lens} src={lens}></img>
+      </div>
+
       <a className={styles.heart}>
         <img src={heart} alt="fav"></img>
         <label>2</label>

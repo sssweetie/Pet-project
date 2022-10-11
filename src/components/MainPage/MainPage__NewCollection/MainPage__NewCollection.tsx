@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MainPage__NewCollection.module.css";
-import rightArrow from "../../../img/MainCollection/Right.png";
+import rightArrow from "../../../img/MainCollection/Right.svg";
 import main from "../../../img/MainCollection/main.png";
 import main2 from "../../../img/MainCollection/main2.png";
 import main3 from "../../../img/MainCollection/main3.png";

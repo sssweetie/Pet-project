@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Instagram.module.css";
-import image from "../../img/Instagram/image.png";
-import image2 from "../../img/Instagram/image2.png";
-import image3 from "../../img/Instagram/image3.png";
-import instagram from "../../img/Instagram/Instagram.png";
+import image from "../../img/Instagram/image.svg";
+import image2 from "../../img/Instagram/image2.svg";
+import image3 from "../../img/Instagram/image3.svg";
+import instagram from "../../img/Instagram/Instagram.svg";
 const Instagram = () => {
   const pictures = [image, image2, image3];
   const picturesComponents = pictures.map((picture) => (
