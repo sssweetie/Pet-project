@@ -24,3 +24,18 @@ div.container p b {
 nav.navigation a:not(:first-child) {
   margin-left: 32px;
 }
+
+.selectorWrapper {
+  display: flex;
+}
+
+.selectorWrapper select {
+  margin-left: 12px;
+  border: none;
+  background-color: black;
+  color: #ffffff;
+}
+
+.selectorWrapper img {
+  width: 20px;
+}
