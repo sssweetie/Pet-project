@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Advertisment_Time.module.css";
-// make it class component and use life methods
 const Advertisment_Timer = () => {
   const [time, setCurrentTime] = useState("");
-
-  //TODO TIMER
   useEffect(() => {
     const interval = setInterval(() => {
       const date = new Date();
       let currentTime = date.toLocaleTimeString("en-GB", {
         day: "2-digit",
       });
-      // .map((item) => (item.search(/[0-9]/) !== -1 ? item : null))
       setCurrentTime(
         currentTime
           .split("")

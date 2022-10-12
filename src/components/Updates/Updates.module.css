@@ -93,3 +93,7 @@
   line-height: 25.6px;
   font-family: "Lato", sans-serif;
 }
+
+.flagBox:checked {
+  accent-color: #17696a;
+}

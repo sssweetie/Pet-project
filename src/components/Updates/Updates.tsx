@@ -21,7 +21,7 @@ const Updates = () => {
           <button>Subscribe</button>
         </div>
         <div className={styles.iAgree}>
-          <input type="checkbox"></input>
+          <input className={styles.flagBox} type="checkbox"></input>
           <p>I agree to receive communications from Createx Store.</p>
         </div>
       </div>
