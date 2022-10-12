@@ -22,16 +22,17 @@ const MainPage__Navigation = () => {
         ></input>
         <img className={styles.lens} src={lens}></img>
       </div>
-
-      <a className={styles.heart}>
-        <img src={heart} alt="fav"></img>
-        <label>2</label>
-      </a>
-      <div className={styles.verticalLine}></div>
-      <a className={styles.cart}>
-        <img src={cart} alt="cart"></img>
-        <label>4</label>
-      </a>
+      <div className={styles.likeCartWrapper}>
+        <a className={styles.heart}>
+          <img src={heart} alt="fav"></img>
+          <label>2</label>
+        </a>
+        <div className={styles.verticalLine}></div>
+        <a className={styles.cart}>
+          <img src={cart} alt="cart"></img>
+          <label>4</label>
+        </a>
+      </div>
     </nav>
   );
 };

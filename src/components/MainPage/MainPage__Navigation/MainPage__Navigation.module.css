@@ -30,7 +30,9 @@ nav section a:not(:first-child) {
 }
 .verticalLine {
   border-left: 2px #dadbdd solid;
-  height: 22px;
+  height: 20px;
+  opacity: 0.5;
+  margin-left: 20px;
 }
 .heart {
   margin-left: 48px;
@@ -38,6 +40,7 @@ nav section a:not(:first-child) {
 .cart {
   justify-content: center;
   align-items: center;
+  margin-left: 20px;
 }
 a.heart label {
   font-size: 16px;
@@ -64,8 +67,13 @@ a.cart label {
 }
 
 .inputWrapper,
+.likeCartWrapper,
 .cart,
 .heart,
 .nav {
   display: flex;
+}
+
+.likeCartWrapper {
+  align-items: center;
 }
