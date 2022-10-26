@@ -1,8 +1,8 @@
 # Online clothing store
 ## Все коммиты в ветке main page. All commits inside "main page" branch
-Данный вебсайт разрабатывался для закрепления React-Redux технологий, RestAPI запросов и ознакомлением с TypeScript.
+Данный вебсайт разрабатывался на React-Redux + TS(lite). 
 
-Current website is developed for learning React-Redux, RestAPI and TypeScript.
+Current website is developed on React-Redux + TS(lite)
 
 ## How to install 
 Для запуска данного репозитория, необходимо клонировать его к себе на компьютер. Прописать команду `npm install` для подгрузки необходимых пакетов и npm start для запуска самого приложения. Далее, в браузерной строке необходимо открыть `http://localhost:3000`
